@@ -1,6 +1,0 @@
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyLexer.cs
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyParser.cs
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyParserListener.cs
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyParserBaseListener.cs
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyParserVisitor.cs
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PrototipoCompi\obj\Debug\MyParserBaseVisitor.cs
