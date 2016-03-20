@@ -1,4 +1,4 @@
-﻿namespace PrototipoCompi
+﻿namespace PruebaRa
 {
     partial class MyLexer
     {

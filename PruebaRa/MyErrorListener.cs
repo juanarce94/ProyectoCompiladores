@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Antlr4.Runtime;
-using PrototipoCompi;
+using PruebaRa;
 
 class MyErrorListener : BaseErrorListener
 {
@@ -29,7 +29,7 @@ class MyErrorListener : BaseErrorListener
                     "La semántica de la expresión es inválida!!!";
             else if (e is InputMismatchException)
                 msg = "Error en el parser en la línea: " + line + ", columna: " + charPositionInLine + "\n" +
-                    "Se esperaba: TOKEN_ESPERADO " + /*AQUÍ TOKENS*/"" + " y en su lugar se encontró '" + offendingSymbol.Text + "'!!!\n\n";
+                    "Se esperaba: "  + "algo "+ "en su lugar se encontró '" + offendingSymbol.Text + "'!!!\n\n";
             else
                 msg = "Error general!!!\n\n";
 
@@ -38,7 +38,7 @@ class MyErrorListener : BaseErrorListener
             msg = "Error en el parser en la línea: " + line + ", columna: " + charPositionInLine + "\n" +
                 msg + "\n\n"; //= "Error general!!!\n";*/
         
-        Form1.errores.Append(msg);
+        Program.errores.Append(msg);
 
         //throw new ParserException();
 

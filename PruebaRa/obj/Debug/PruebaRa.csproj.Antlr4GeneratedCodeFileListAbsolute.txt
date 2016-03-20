@@ -1,0 +1,6 @@
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyLexer.cs
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyParser.cs
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyParserListener.cs
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyParserBaseListener.cs
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyParserVisitor.cs
+c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\MyParserBaseVisitor.cs

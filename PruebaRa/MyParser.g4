@@ -8,12 +8,11 @@ options {
 language = CSharp;
 tokenVocab = MyLexer;
 }
-/*
-* Parser Rules
-*/
+
+
 
 program
-: CLASS ID ( ConstDecl | varDecl | classDecl )* CORIZQ ( methodDecl )* CORDER
+: CLASS ID ( consDecl | varDecl | classDecl )* CORIZQ ( methodDecl )* CORDER
 ;
 
 consDecl 
@@ -37,7 +36,7 @@ formPars
 ;
 
 type
-: ID ( CORIZQ CORDER | )
+: ID ( CUADIZQ CUADDER | )
 ;
 
 statement

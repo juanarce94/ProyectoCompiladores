@@ -12,6 +12,7 @@ TAB
 : '\t' -> channel(HIDDEN)
 ;
 
+
 BREAK
 : 'break';
 
@@ -59,7 +60,6 @@ FOREACH
 FOR
 : 'for';
 
-
 PyCOMA : ';' ;
 COMA : ',' ;
 IGUAL : '=' ;
@@ -87,7 +87,7 @@ MAYORIGUAL : '>=' ;
 PREG : '?';
 ARROBA : '@';
 GUIOBAJO : '_';
-SQUOTE : '39';
+SQUOTE : '\'';
 VERTICAL : '|';
 VERTICALVERTICAL : '||' ;
 CORDER : '}';
@@ -97,6 +97,16 @@ CUADIZQ : '[';
 COMENT: '//';
 COMENTBLOCK1: '/*';
 COMENTBLOCK2: '*/';
+
+
+NUM
+: '0' | '1'..'9' ('0'..'9')*
+;
+
+ID
+: CharInicial CharContenido* 
+;
+
 
 PRINTABLECHAR
 : CharInicial
@@ -124,10 +134,11 @@ PRINTABLECHAR
 |'?'
 |'@'
 ;
-
 CHARCONST
 : SQUOTE (PRINTABLECHAR | NEWLINE) SQUOTE
 ;
+
+
 
 COMENTARIO
 : '//'  -> channel(HIDDEN)
@@ -137,15 +148,9 @@ COMENTARIOBLOQUE
 : '/*' (. | COMENTARIOBLOQUE)* '*/' -> channel(HIDDEN)
 ;
 
-NUM
-: '0' | '1'..'9' ('0'..'9')*
-;
-
-ID
-: CharInicial CharContenido* 
-;
 
 LQUOTE : '"' -> more, mode(STRI) ;
+
 
 fragment
 CharContenido
@@ -160,4 +165,4 @@ CharInicial
 
 mode STRI;
 STR : '"' -> mode(DEFAULT_MODE) ; 
-TEXT : . -> more ;
+TEXT : .* -> more ;
