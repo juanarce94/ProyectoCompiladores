@@ -1,0 +1,6 @@
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyLexer.cs
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParser.cs
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParserListener.cs
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParserBaseListener.cs
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParserVisitor.cs
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParserBaseVisitor.cs
