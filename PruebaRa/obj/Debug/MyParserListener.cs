@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\MyParser.g4 by ANTLR 4.5-SNAPSHOT
+// Generated from C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PruebaRa\PruebaRa\MyParser.g4 by ANTLR 4.5-SNAPSHOT
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -34,6 +34,409 @@ using IToken = Antlr4.Runtime.IToken;
 [System.CodeDom.Compiler.GeneratedCode("ANTLR", "4.5-SNAPSHOT")]
 [System.CLSCompliant(false)]
 public interface IMyParserListener : IParseTreeListener {
+	/// <summary>
+	/// Enter a parse tree produced by the <c>classDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.classDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterClassDeclAST([NotNull] MyParser.ClassDeclASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>classDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.classDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitClassDeclAST([NotNull] MyParser.ClassDeclASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>consDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.consDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterConsDeclAST([NotNull] MyParser.ConsDeclASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>consDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.consDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitConsDeclAST([NotNull] MyParser.ConsDeclASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>programAST</c>
+	/// labeled alternative in <see cref="MyParser.program"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterProgramAST([NotNull] MyParser.ProgramASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>programAST</c>
+	/// labeled alternative in <see cref="MyParser.program"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitProgramAST([NotNull] MyParser.ProgramASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>methodDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.methodDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterMethodDeclAST([NotNull] MyParser.MethodDeclASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>methodDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.methodDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitMethodDeclAST([NotNull] MyParser.MethodDeclASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>typeAST</c>
+	/// labeled alternative in <see cref="MyParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterTypeAST([NotNull] MyParser.TypeASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>typeAST</c>
+	/// labeled alternative in <see cref="MyParser.type"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitTypeAST([NotNull] MyParser.TypeASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>formParsAST</c>
+	/// labeled alternative in <see cref="MyParser.formPars"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFormParsAST([NotNull] MyParser.FormParsASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>formParsAST</c>
+	/// labeled alternative in <see cref="MyParser.formPars"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFormParsAST([NotNull] MyParser.FormParsASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>actParsAST</c>
+	/// labeled alternative in <see cref="MyParser.actPars"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterActParsAST([NotNull] MyParser.ActParsASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>actParsAST</c>
+	/// labeled alternative in <see cref="MyParser.actPars"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitActParsAST([NotNull] MyParser.ActParsASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>designatorAST</c>
+	/// labeled alternative in <see cref="MyParser.designator"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterDesignatorAST([NotNull] MyParser.DesignatorASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>designatorAST</c>
+	/// labeled alternative in <see cref="MyParser.designator"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitDesignatorAST([NotNull] MyParser.DesignatorASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>condFactAST</c>
+	/// labeled alternative in <see cref="MyParser.condFact"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterCondFactAST([NotNull] MyParser.CondFactASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>condFactAST</c>
+	/// labeled alternative in <see cref="MyParser.condFact"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitCondFactAST([NotNull] MyParser.CondFactASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>conditionAST</c>
+	/// labeled alternative in <see cref="MyParser.condition"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterConditionAST([NotNull] MyParser.ConditionASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>conditionAST</c>
+	/// labeled alternative in <see cref="MyParser.condition"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitConditionAST([NotNull] MyParser.ConditionASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementREADAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementREADAST([NotNull] MyParser.StatementREADASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementREADAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementREADAST([NotNull] MyParser.StatementREADASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementFORAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementFORAST([NotNull] MyParser.StatementFORASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementFORAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementFORAST([NotNull] MyParser.StatementFORASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementWHILEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementWHILEAST([NotNull] MyParser.StatementWHILEASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementWHILEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementWHILEAST([NotNull] MyParser.StatementWHILEASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementWRITEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementWRITEAST([NotNull] MyParser.StatementWRITEASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementWRITEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementWRITEAST([NotNull] MyParser.StatementWRITEASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementBlockAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementBlockAST([NotNull] MyParser.StatementBlockASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementBlockAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementBlockAST([NotNull] MyParser.StatementBlockASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementDesignatorAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementDesignatorAST([NotNull] MyParser.StatementDesignatorASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementDesignatorAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementDesignatorAST([NotNull] MyParser.StatementDesignatorASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementRETURNAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementRETURNAST([NotNull] MyParser.StatementRETURNASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementRETURNAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementRETURNAST([NotNull] MyParser.StatementRETURNASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementPyCOMEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementPyCOMEAST([NotNull] MyParser.StatementPyCOMEASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementPyCOMEAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementPyCOMEAST([NotNull] MyParser.StatementPyCOMEASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementBREAKAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementBREAKAST([NotNull] MyParser.StatementBREAKASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementBREAKAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementBREAKAST([NotNull] MyParser.StatementBREAKASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>statementIFAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStatementIFAST([NotNull] MyParser.StatementIFASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>statementIFAST</c>
+	/// labeled alternative in <see cref="MyParser.statement"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStatementIFAST([NotNull] MyParser.StatementIFASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>blockAST</c>
+	/// labeled alternative in <see cref="MyParser.block"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterBlockAST([NotNull] MyParser.BlockASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>blockAST</c>
+	/// labeled alternative in <see cref="MyParser.block"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitBlockAST([NotNull] MyParser.BlockASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>condtermAST</c>
+	/// labeled alternative in <see cref="MyParser.condterm"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterCondtermAST([NotNull] MyParser.CondtermASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>condtermAST</c>
+	/// labeled alternative in <see cref="MyParser.condterm"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitCondtermAST([NotNull] MyParser.CondtermASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>exprAST</c>
+	/// labeled alternative in <see cref="MyParser.expr"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterExprAST([NotNull] MyParser.ExprASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>exprAST</c>
+	/// labeled alternative in <see cref="MyParser.expr"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitExprAST([NotNull] MyParser.ExprASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>termAST</c>
+	/// labeled alternative in <see cref="MyParser.term"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterTermAST([NotNull] MyParser.TermASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>termAST</c>
+	/// labeled alternative in <see cref="MyParser.term"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitTermAST([NotNull] MyParser.TermASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorCHARCONSTAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorCHARCONSTAST([NotNull] MyParser.FactorCHARCONSTASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorCHARCONSTAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorCHARCONSTAST([NotNull] MyParser.FactorCHARCONSTASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorNEWAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorNEWAST([NotNull] MyParser.FactorNEWASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorNEWAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorNEWAST([NotNull] MyParser.FactorNEWASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorNUMAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorNUMAST([NotNull] MyParser.FactorNUMASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorNUMAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorNUMAST([NotNull] MyParser.FactorNUMASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorTrueFalseAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorTrueFalseAST([NotNull] MyParser.FactorTrueFalseASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorTrueFalseAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorTrueFalseAST([NotNull] MyParser.FactorTrueFalseASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorDesignatorAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorDesignatorAST([NotNull] MyParser.FactorDesignatorASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorDesignatorAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorDesignatorAST([NotNull] MyParser.FactorDesignatorASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>factorExprAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactorExprAST([NotNull] MyParser.FactorExprASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>factorExprAST</c>
+	/// labeled alternative in <see cref="MyParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactorExprAST([NotNull] MyParser.FactorExprASTContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by the <c>varDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.varDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterVarDeclAST([NotNull] MyParser.VarDeclASTContext context);
+	/// <summary>
+	/// Exit a parse tree produced by the <c>varDeclAST</c>
+	/// labeled alternative in <see cref="MyParser.varDecl"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitVarDeclAST([NotNull] MyParser.VarDeclASTContext context);
+
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="MyParser.program"/>.
 	/// </summary>

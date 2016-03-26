@@ -1,4 +1,5 @@
 ﻿using Antlr4.Runtime;
+using Antlr4.Runtime.Tree;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,32 +23,43 @@ namespace PruebaRa
                 MyLexer lexer = new MyLexer(input);                
                 CommonTokenStream tokens = new CommonTokenStream(lexer);                
                 MyParser parser = new MyParser(tokens);
-
-                parser.RemoveErrorListeners();
-                parser.AddErrorListener(MyErrorListener.INSTANCE);
-                parser.program();
-
-               /* Console.WriteLine("Aqui");
                 
+                /*Console.WriteLine("Codigo");
+
                 IList<IToken> listaTokens = lexer.GetAllTokens();
+
+                Console.WriteLine("Cantidad de tokens: " + listaTokens.Count);
+
                 foreach (IToken t in listaTokens)
                 {
                     Console.WriteLine("Lexema: " + t.Text + "   Token: " + t.Type);
                 }
                 */
-                
                 //parser.program();
+                parser.RemoveErrorListeners();
+                parser.AddErrorListener(MyErrorListener.INSTANCE);
 
-                Console.WriteLine("-------------------------Errores-----------------");
+                IParseTree tree = parser.program();
 
- 
-                //IParseTree tree = parser.program();
-                //Console.WriteLine(tree.ToStringTree(parser));
-                //PrettyPrint imprimir = new PrettyPrint(null);
-                //imprimir.Visit(tree);
+                Console.WriteLine("------------------------------Errores-------------------------------------");
                 Console.Write(errores.ToString());
+                
+                //Console.WriteLine(tree.ToStringTree(parser));
+                TreeViewPrint imprimir = new TreeViewPrint();
+                imprimir.Visit(tree);
+                Console.WriteLine("-----------------------------impresion------------------------------------");
+                
+                List<PrintableNode> pTree = imprimir.getPrintableTree();
 
-                parser.program();
+                Console.WriteLine("index\tFather\t| Name");
+                Console.WriteLine("___________________________________________________________________________");
+                for (int i = 0; i < pTree.Count; i++)
+                {   
+                    Console.WriteLine(i + "|\t " + pTree[i].father + "\t| " + pTree[i].text);
+                    Console.WriteLine("___________________________________________________________________________");
+                }
+
+              
             }
             catch (Exception e)
             {

@@ -13,3 +13,6 @@ c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj
 c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\PruebaRa.csproj.Antlr4GeneratedCodeFileListAbsolute.txt
 c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\PruebaRa.exe
 c:\users\juan miguel\documents\visual studio 2013\Projects\PruebaRa\PruebaRa\obj\Debug\PruebaRa.pdb
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PruebaRa\bin\Debug\PruebaRa.exe.config
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PruebaRa\obj\Debug\PruebaRa.exe
+C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\PruebaRa\obj\Debug\PruebaRa.pdb

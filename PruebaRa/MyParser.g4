@@ -12,97 +12,95 @@ tokenVocab = MyLexer;
 
 
 program
-: CLASS ID ( consDecl | varDecl | classDecl )* CORIZQ ( methodDecl )* CORDER
+: CLASS ID ( consDecl | varDecl | classDecl )* CORIZQ ( methodDecl )* CORDER							#programAST
 ;
 
 consDecl 
-: CONST type ID IGUAL ( NUM | CHARCONST ) PyCOMA
+: CONST type ID IGUAL ( NUM | CHARCONST ) PyCOMA														#consDeclAST
 ;
 
 varDecl 
-: type ID ( COMA ID )* PyCOMA
+: type ID ( COMA ID )* PyCOMA																			#varDeclAST
 ;
 
 classDecl 
-: CLASS ID CORIZQ ( varDecl )* CORDER
+: CLASS ID CORIZQ ( varDecl )* CORDER																	#classDeclAST
 ;
 
 methodDecl
-: (type | VOID) ID PIZQ ( formPars |  ) PDER ( varDecl )* block
+: (type | VOID) ID PIZQ ( formPars |  ) PDER ( varDecl )* block											#methodDeclAST
 ;
 
 formPars
-: type ID ( COMA type ID )*
+: type ID ( COMA type ID )*																				#formParsAST
 ;
 
 type
-: ID ( CUADIZQ CUADDER | )
+: ID ( CUADIZQ CUADDER | )																				#typeAST
 ;
 
 statement
-: designator ( IGUAL  expr | PIZQ ( actPars | ) PDER | MASMAS | MENOSMENOS ) PyCOMA
-| IF PIZQ condition PDER statement ( ELSE statement | )
-| FOR PIZQ expr PyCOMA ( condition | ) PyCOMA ( statement | ) PDER statement
-| WHILE PIZQ condition PDER statement
-| BREAK PyCOMA
-| RETURN ( expr | ) PyCOMA
-| READ PIZQ designator PDER PyCOMA
-| WRITE PIZQ expr ( COMA NUM | ) PDER PyCOMA
-| block
-| PyCOMA
+: designator ( IGUAL  expr | PIZQ ( actPars | ) PDER | MASMAS | MENOSMENOS ) PyCOMA						#statementDesignatorAST
+| IF PIZQ condition PDER statement ( ELSE statement | )													#statementIFAST
+| FOR PIZQ expr PyCOMA ( condition | ) PyCOMA ( statement | ) PDER statement							#statementFORAST
+| WHILE PIZQ condition PDER statement																	#statementWHILEAST
+| BREAK PyCOMA																							#statementBREAKAST
+| RETURN ( expr | ) PyCOMA																				#statementRETURNAST
+| READ PIZQ designator PDER PyCOMA																		#statementREADAST
+| WRITE PIZQ expr ( COMA NUM | ) PDER PyCOMA															#statementWRITEAST
+| block																									#statementBlockAST
+| PyCOMA																								#statementPyCOMEAST
 ;
 
 block
-: CORIZQ (statement)* CORDER
+: CORIZQ (statement)* CORDER																			#blockAST
 ;
 
 actPars 
-: expr (COMA expr)*
+: expr (COMA expr)*																						#actParsAST
 ;
 
 condition
-: condterm ( VERTICALVERTICAL condterm )*
+: condterm ( VERTICALVERTICAL condterm )*																#conditionAST
 ;
 
 condterm
-: condFact ( AMPAMP condFact )*
+: condFact ( AMPAMP condFact )*																			#condtermAST
 ;
 
 condFact
-: expr relop expr
+: expr relop expr																						#condFactAST
 ;
 
 expr
-: ( MENOS | ) term ( addop term )*
+: ( MENOS | ) term ( addop term )*																		#exprAST
 ;
 
 term
-: factor ( mulop factor )*
+: factor ( mulop factor )*																				#termAST
 ;
 
 factor
-: designator ( PIZQ ( actPars | ) PDER | )
-| NUM
-| CHARCONST
-| (TRUE | FALSE)
-| NEW ID ( CUADIZQ expr CUADDER | )
-| PIZQ expr PDER
+: designator ( PIZQ ( actPars | ) PDER | )																#factorDesignatorAST
+| NUM																									#factorNUMAST
+| CHARCONST																								#factorCHARCONSTAST
+| (TRUE | FALSE)																						#factorTrueFalseAST
+| NEW ID ( CUADIZQ expr CUADDER | )																		#factorNEWAST
+| PIZQ expr PDER																						#factorExprAST
 ;
 
 designator
-: ID ( PUNTO ID |  CUADIZQ expr CUADDER )*
+: ID ( PUNTO ID |  CUADIZQ expr CUADDER )*																#designatorAST
 ;
 
 relop
-: IGUALIGUAL | DIF | MAYORQ | MAYORIGUAL | MENORQ | MENORIGUAL 
+: IGUALIGUAL | DIF | MAYORQ | MAYORIGUAL | MENORQ | MENORIGUAL											#relopAST
 ;
 
 addop 
-: MAS | MENOS
+: SUMA | MENOS																							#addopAST
 ;
 
 mulop
-: MUL | DIV | PORCEN
+: MUL | DIV | PORCEN																					#mulopAST
 ;
-
- 
