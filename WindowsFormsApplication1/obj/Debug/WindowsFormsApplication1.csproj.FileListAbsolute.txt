@@ -17,9 +17,3 @@ C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\
 C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\MyParserBaseVisitor.cs
 C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.Antlr4GeneratedCodeFileListAbsolute.txt
 C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\ProyectoCompiladores\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SintaxisTreeView.resources
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PruebaRa\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PruebaRa\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PruebaRa\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\Juan Miguel\Documents\Visual Studio 2013\Projects\PrototipoCompi\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

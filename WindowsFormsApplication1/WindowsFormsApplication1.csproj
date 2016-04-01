@@ -70,6 +70,9 @@
     <Compile Include="SintaxisTreeView.Designer.cs">
       <DependentUpon>SintaxisTreeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="SyntaxRichTextBoxBetter.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TreeViewPrint.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

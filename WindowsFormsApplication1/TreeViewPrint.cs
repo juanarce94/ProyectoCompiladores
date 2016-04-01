@@ -217,6 +217,8 @@ namespace WindowsFormsApplication1
             father = tree.Count;
             tree.Add(nn);
 
+            //ID ( PUNTO ID |  CUADIZQ expr CUADDER )*	
+
             if(context.expr() != null){
                 for (int i = 0; i < context.expr().Length; i++){
                     Visit(context.expr(i));

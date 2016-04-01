@@ -24,6 +24,7 @@ namespace WindowsFormsApplication1
         private void imprimirArbol(List<PrintableNode> tree)
         {
 
+            if (tree.Count == 0) return;
 
             treeView1.Nodes.Add(tree[0].text);
             TreeNode firstTreeNode = treeView1.Nodes[0];            
@@ -41,13 +42,13 @@ namespace WindowsFormsApplication1
 
             for (int i = 1; i < tree.Count; i++)
             {
-                PrintableNode songTemp = tree[i];
-                int fatherTemp = songTemp.father;
+                PrintableNode sonTemp = tree[i];
+                int fatherTemp = sonTemp.father;
 
                 if (fatherTemp == father) {
                     cont++;
 
-                    treeNode.Nodes.Add(songTemp.text);
+                    treeNode.Nodes.Add(sonTemp.text);
                     TreeNode newTreeNode = treeNode.Nodes[cont];
 
                     agregarNodos(newTreeNode, i, tree);

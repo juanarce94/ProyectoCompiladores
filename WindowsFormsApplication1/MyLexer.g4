@@ -141,11 +141,11 @@ CHARCONST
 
 
 COMENTARIO
-: '//'  -> channel(HIDDEN)
+: '//' .*? '\n'  -> channel(HIDDEN)
 ;
 
 COMENTARIOBLOQUE
-: '/*' (. | COMENTARIOBLOQUE)* '*/' -> channel(HIDDEN)
+: '/*' (COMENTARIOBLOQUE|.)*? '*/' -> channel(HIDDEN)
 ;
 
 
